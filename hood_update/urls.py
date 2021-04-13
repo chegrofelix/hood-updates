@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('hood.urls')),
     
-    url(r'accounts/login/$',views.LoginView.as_view(), name='login'),
-    url(r'accounts/logout/$',views.LogoutView.as_view(next_page='/'), name='logout'),
+    url(r'^accounts/login/$',views.LoginView.as_view(), name='login'),
+    url(r'^accounts/logout/$',views.LogoutView.as_view(next_page='/'), name='logout'),
 
 ]
